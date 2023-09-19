@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>livraria</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <header class="cabecalho">
+    <div class="container"></div>
+        <input type="checkbox" id="menu" class="container__botao">
+        <label for="menu" class="container__rotulo">
+            <span class="cabecalho__menuhamburguer container__imagem"></span>
+        </label>
+        <ul class="lista-menu">
+            <li class="lista-menu__titulo">categoria</li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">programacao</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">front-end</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">infraestrutura</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">business</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">design & UX</a>
+            </li>
+        <img src="img/logo.svg" alt="logo da livraria">
+        <h1 class="container__titulo"><b class="container__titulo--negrito">livraria</b>books</h1>
+    </div>
+
+    <ul class="opcoes">
+        <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+        <label for="opcoes-menu" class="opcoes__rotulo">
+          <li class="opcoes__item">categoria</li>
+        </label>  
+
+        <ul class="lista-menu">
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">programacao</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">front-end</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">infraestrutura</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">business</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">design & UX</a>
+            </li>
+
+        <li class="opcoes__item"><a href="#" class="opcoes__link"></a>favoritos</li>
+        <li class="opcoes__item"><a href="#" class="opcoes__link"></a>minha estante</li>
+    </ul>
+    
+    <div class="container"></div>
+        <a href="#">
+            <img src="img/favoritos.svg" alt="meus favoritos" class="container__imagem container__imagem-transparent">
+        </a>
+        <a href="#" class="container__link">
+            <img src="omg/compras.svg" alt="corrinho de compras" class="container__imagem">
+            <p class="container__texto">Meu perfil</p>
+        </a>
+        <a href="#">
+            <img src="omg/usuario.svg" alt="meu perfil" class="container__imagem">
+        </a>
+    </div>
+ </header> 
+ 
+            <section class="banner">
+                <h2 class="banner__titulo">ja sabe por onde comecar?</h2>
+                <p class="banner__texto">encontr na nossa estante o que vc precisa para o seu desenvolvimento!</p>
+                <input type="search" class="banner__pesquisa" placeholder="qual sera sua proxima leitura?">
+            </section>
+
+            <section class="carrossel">
+                <h2 class="carrossel__titulo">mais vendidos</h2>
+                <div class="carrossel__container"></div>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+                        <script type="module">
+                        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+
+                    const swiper = new Swiper()
+                    </script>
+
+                    <!-- Slider main container -->
+                    <div class="swiper"></div>
+
+                        <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/livro1.jpg" alt="algum livro para fazer parte do carrossel"></div>
+                        <div class="swiper-slide"><img src="img/livro2.jpg" alt="algum livro para fazer parte do carrossel"></div>
+                        <div class="swiper-slide"><img src="img/livro3.jpg" alt="algum livro para fazer parte do carrossel"></div>
+                        <div class="swiper-slide"><img src="img/livro4.jpg" alt="algum livro para fazer parte do carrossel"></div>
+                        <div class="swiper-slide"><img src="img/livro5.jpg" alt="algum livro para fazer parte do carrossel"></div>
+                        <div class="swiper-slide"><img src="img/livro6.jpg" alt="algum livro para fazer parte do carrossel"></div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>  
+
+                    <div class="card">
+                        <!--1 linha-->
+                        <div class="car__descricao">
+                            <!--1 coluna-->
+                            <div class="descricao">
+                                <h3 class="descricao__titulo">talvez vc tambem se interesse por</h3>
+                                <h2 class="descricao__titulo-livro">angular 11 e firebase</h2>
+                                <p class="descricao__texto">construindo uma aplicacao integrada com a plataforma</p>
+                            </div>
+                            <!--2 coluna-->
+                            <img src="img/angular.png" class="descricao__imagem">
+                        </div>
+
+                        <!--2 linha-->
+                        <div class="card__botoes">
+                            <!--1 coluna-->
+                            <ul class="botao">
+                                <li class="botoes__itens"><img src="img/favoritos.png" alt="favoritar livro"></li>
+                                <li class="botoes__itens"><img src="img/compras.png" alt="adicionar no carrinho de compras"></li>
+                            </ul>
+
+                            <a href="#" class="botoes__ancora">saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="topicos">
+                <h2 class="topicos__titulos">topipcos visitados recentemente</h2>
+                <ul class="topicos__lista">
+                    <li class="topicos__itens">
+                        <a href="#" class="topicos__link">android</a>
+                    </li>
+                    <li class="topicos__itens">
+                        <a href="#" class="topicos__link">markting digital</a>
+                    </li>
+                    <li class="topicos__itens">
+                        <a href="#" class="topicos__link">agile</a>
+                    </li>
+                    <li class="topicos__itens">
+                        <a href="#" class="topicos__link">startup</a>
+                    </li>
+                    <li class="topicos__itens">
+                        <a href="#" class="topicos__link">HTML e CSS</a>
+                    </li>
+                    <li class="topicos__itens">
+                        <a href="#" class="topicos__link">Python</a>
+                    </li>
+                    <li class="topicos__itens">
+                        <a href="#" class="topicos__link">oo</a>
+                    </li>
+                    <li class="topicos__itens">
+                        <a href="#" class="topicos__link">java script</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="contato">
+                <div class="contato__descricao"></div>
+                <h2 class="contato__titulo">fique por dentro das novidade!</h2>
+                <p class="contato__texto">atualizacao de ebooks, novos livros, promocoes e outros.</p>
+                <input type="e-mail" placeholder="cadastre seu e-mail" class="contato__e-mail">
+            </section>
+
+            <hr />
+
+            <footer class="rodape">
+                <h2 class="rodape__titulo">GRUPO DF</h2>
+                <ul class="lista-rodape">
+                    <li class="lista-rodape__titulo">educacao</li>
+                    <li class="lista-rodape__item"><img src="img/imgemlogo" alt="logo da casa do codigo"><a href="#" class="lista-rodape__link"></a>casa do DF</li>
+                   
+                    <li class="lista-rodape__item"><img src="img/imgemlogo2" alt="logo 2"><a href="#" class="lista-rodape__link"></a></li>
+
+                    <li class="lista-rodape__titulo">educacao online</li>
+                    <li class="lista-rodape__item"><img src="img/imgemlogo3" alt="logo 3"><a href="#" class="lista-rodape__link"></a>casa do DF</li>
+
+                    <li class="lista-rodape__item"><img src="img/imgemlogo4" alt="logo 4"><a href="#" class="lista-rodape__link"></a>DF para empresas</li>
+
+                    <li class="lista-rodape__item"><img src="img/imgemlogo5" alt="logo 5"><a href="#" class="lista-rodape__link"></a>DF airline</li>
+
+                    <li class="lista-rodape__item"><img src="img/imgemlogo6" alt="logo 6"><a href="#" class="lista-rodape__link"></a>DF start</li>
+
+                    <li class="lista-rodape__item"><img src="img/imgemlogo7" alt="logo 7"><a href="#" class="lista-rodape__link"></a>DF music</li>
+
+                    <li class="lista-rodape__item"><img src="img/imgemlogo8" alt="logo 8"><a href="#" class="lista-rodape__link"></a>DF lingua</li>
+
+                    <li class="lista-rodape__item"><img src="img/imgemlogo9" alt="logo 9"><a href="#" class="lista-rodape__link"></a>mp3</li>
+                </ul>
+
+                <ul class="lista-rodape">
+                    <li class="lista-rodape__titulo">comunidade</li>
+
+                    <li class="lista-rodape__item"><img src="img/imgemlogo10" alt="logo 10"><a href="#" class="lista-rodape__link"></a>ponte tech</li>
+
+                    <li class="lista-rodape__item"><img src="img/imgemlogo10" alt="logo 10"><a href="#" class="lista-rodape__link"></a>escudo dev</li>
+
+                    <li class="lista-rodape__item"><img src="img/imgemlogo11" alt="logo 11"><a href="#" class="lista-rodape__link"></a>layouts</li>
+
+                    <li class="lista-rodape__item"><img src="img/imgemlogo12" alt="logo 12"><a href="#" class="lista-rodape__link"></a>link da bios</li>
+
+                    <li class="lista-rodape__item"><img src="img/imgemlogo13" alt="logo 13"><a href="#" class="lista-rodape__link"></a>carreira sem fronteiras</li>
+
+                    <li class="lista-rodape__item"><img src="img/imgemlogo14" alt="logo 14"><a href="#" class="lista-rodape__link"></a>jobs</li>
+
+                    <li class="lista-rodape__item"><img src="img/imgemlogo15" alt="logo 15"><a href="#" class="lista-rodape__link"></a>gjj</li>
+                </ul>
+
+            </footer>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+ <script>
+    const Swiper = new Swiper('.swiper',{
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: 'swiper-pagination',
+            type: 'bullets',
+        },
+    });
+ </script>
+</body>
+
+
+</html>
